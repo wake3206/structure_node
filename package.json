@@ -1,0 +1,34 @@
+{
+  "name": "yaoi_by_snufflehp",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd client && npm run start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "start:ssr": "NODE_ENV=development nodemon bootstrap.js"
+  },
+  "dependencies": {
+    "asset-require-hook": "^1.2.0",
+    "babel-core": "6.26.0",
+    "babel-eslint": "7.2.3",
+    "babel-jest": "20.0.3",
+    "babel-loader": "7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react-app": "^3.1.1",
+    "babel-runtime": "6.26.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "ignore-styles": "^5.0.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  }
+}
